@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+:root {
+    --main-color: #7B569E;
+    --secondary-color: #F0864B;
+    --third-color: #D7DC4A;
+    --fourth-color: #76C7D6;
+
+    --main-typography: "Playfair Display";
+    --secondary-typography: Montserrat;
+    --third-typography: Manrope;
+    
+    --font-size-header: 3.2rem;
+    --font-size-subheader: 2.2rem;
+    --font-size-text: 1.6rem;
+}
+
+/* PREDEFINED VARIABLE VALUES WITH FALLBACKS:
+
+    COLORS:
+
+var(--main-color, darkslateblue);
+var(--secondary-color, coral);
+var(--third-color, yellowgreen);
+var(--fourth-color, skyblue);
+
+    FONTS:
+
+var(--main-typography, Georgia);
+var(--secondary-typography, Verdana);
+var(--third-typography, Tahoma);
+
+*/
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: var(--font-size-text);
+    font-family: var(--third-typography, Tahoma);
+}
