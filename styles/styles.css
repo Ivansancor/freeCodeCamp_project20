@@ -51,26 +51,12 @@ body {
 
 
 
-
-.nav-link {
-    color: white;
-    text-decoration: none;
-}
-
-.nav-link:hover, .logo-img:hover {
-    color: var(--secondary-color, coral);
-    transform: scale(96%);
-    transition: all 0.1s ease-in-out;
-}
-
-
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
     padding: 1rem 2rem;
-    background-color: var(--main-color, darkslateblue);
     position: sticky;
     top: 0;
     left: 0;
@@ -84,16 +70,41 @@ header {
     gap: 1rem;
 }
 
+.nav-link {
+    color: var(--main-color, darkslateblue);
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.nav-link:hover, .logo-img:hover {
+    color: var(--secondary-color, coral);
+    transform: scale(96%);
+    transition: all 0.1s ease-in-out;
+}
+
+.logo-img {
+    margin-left: -0.2rem;
+}
+
+
+
+
+main {
+    padding: 2rem;
+}
+
+
+
+
+
 
 
 
 footer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
     width: 100%;
     padding: 2rem;
     border-top: 0.1rem solid var(--main-color, darkslateblue);
+    margin-top: 1rem;
 }
 
 .name {
@@ -119,7 +130,8 @@ footer {
 }
 
 .footer-signature {
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
+    margin-top: -1rem;
 }
 
 .footer-signature .signature {
@@ -134,7 +146,6 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 1rem;
 }
 
 .footer-nav-title {
@@ -158,6 +169,7 @@ footer {
 footer .copyright {
     text-align: center;
     color: var(--main-color, darkslateblue);
+    font-size: 1.4rem;
 }
 
 
@@ -183,7 +195,6 @@ footer .copyright {
 
     .footer-signature {
         margin-bottom: unset;
-        margin-top: -1rem;
     }
 
     .footer-nav-bar {
@@ -219,12 +230,16 @@ footer .copyright {
     .nav-bar {
         gap: 8rem;
     }
+    .footer-nav-bar {
+        gap: 8rem;
+    }
 }
 
 @media screen and (min-width: 1024px) {
-    
 }
 
 @media screen and (min-width: 1200px) {
-    
+    .footer-nav-bar {
+        gap: 12rem;
+    }
 }
