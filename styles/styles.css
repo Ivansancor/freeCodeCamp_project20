@@ -40,6 +40,7 @@ var(--third-typography, Tahoma);
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -105,6 +106,7 @@ footer {
     padding: 2rem;
     border-top: 0.1rem solid var(--main-color, darkslateblue);
     margin-top: 1rem;
+    position: relative;
 }
 
 .name {
@@ -169,7 +171,30 @@ footer {
 footer .copyright {
     text-align: center;
     color: var(--main-color, darkslateblue);
+    opacity: 80%;
     font-size: 1.4rem;
+}
+
+footer .back-up {
+    position: fixed;
+    right: 2rem;
+    top: 85%;
+}
+
+footer .back-up i {
+    font-size: 2rem;
+    color: var(--main-color, darkslateblue);
+    background-color: white;
+    border: 0.15rem solid var(--main-color, darkslateblue);
+    padding: 1rem;
+    border-radius: 50%;
+}
+
+footer .back-up i:hover { 
+    color: white;
+    background-color: var(--main-color, darkslateblue);
+    opacity: 80%;
+    transition: all 0.1s ease-in-out;
 }
 
 
