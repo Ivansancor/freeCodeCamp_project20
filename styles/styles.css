@@ -97,12 +97,12 @@ main {
 }
 
 .landing-div {
-    height: 5rem;
-    margin-top: -5rem;
+    height: 10rem;
+    margin-top: -10rem;
 }
 
 main section {
-    margin-bottom: 2rem;
+    margin-bottom: 5rem;
 }
 
 main section:last-of-type {
@@ -120,6 +120,12 @@ main section:last-of-type {
 
 
 
+
+
+
+
+
+
 .about-text {
     margin-bottom: 2rem;
 }
@@ -129,6 +135,61 @@ main section:last-of-type {
     display: block;
 }
 
+
+
+
+
+.contact-section p {
+    margin-bottom: 2rem;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.contact-form input:not([type="submit"]), .contact-form textarea {
+    display: block;
+    width: 100%;
+    height: 4rem;
+    color: black;
+    font-family: var(--third-typography, Tahoma);
+    font-size: var(--font-size-text);
+    padding-left: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.contact-form textarea {
+    height: 8rem;
+    padding: 0.5rem;
+}
+
+.contact-submit {
+    display: block;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    font-size: var(--font-size-header);
+    font-weight: 500;
+    height: 6rem;
+    color: white;
+    border: none;
+    background-color: var(--secondary-color, coral);
+    transition: all 0.1s ease-in-out;
+    cursor: pointer;
+}
+
+.contact-submit:hover {
+    background-color: white;
+    border: 0.15rem solid var(--secondary-color, coral);
+    color: var(--secondary-color, coral);
+    transform: scale(96%);
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+    border-color: var(--main-color, darkslateblue);
+
+}
 
 
 
@@ -222,14 +283,17 @@ footer .back-up i {
     padding: 1rem;
     border-radius: 50%;
     opacity: 80%;
+    transition: all 0.1s ease-in-out;
 }
 
 footer .back-up i:hover { 
     color: white;
     background-color: var(--main-color, darkslateblue);
-    transition: all 0.1s ease-in-out;
     opacity: 100%;
 }
+
+
+
 
 
 /* media queries */
@@ -317,15 +381,31 @@ footer .back-up i:hover {
     }
 
 
+    .contact-submit {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+
 
     .footer-nav-bar {
         gap: 8rem;
     }
 }
 
+@media screen and (min-width: 880px) {
+    .contact-submit {
+        width: 70%;
+    }
+}
+
 @media screen and (min-width: 1024px) {
     main {
         width: 90%;
+    }
+
+    .contact-submit {
+        width: 60%;
     }
 }
 
