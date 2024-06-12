@@ -111,6 +111,25 @@ main section:last-of-type {
 
 
 
+.intro {
+    font-weight: 500;
+}
+
+.name {
+    font-family: var(--main-typography, Georgia);
+    font-size: var(--font-size-header);
+    color: black;
+    font-weight: medium;
+}
+
+.role {
+    font-family: var(--secondary-typography, Verdana);
+    font-size: var(--font-size-subheader);
+    color: var(--main-color, darkslateblue);
+    font-weight: normal;
+}
+
+
 
 .section-title {
     text-transform: uppercase;
@@ -242,20 +261,6 @@ footer {
     border-top: 0.1rem solid var(--main-color, darkslateblue);
     margin-top: 1rem;
     position: relative;
-}
-
-.name {
-    font-family: var(--main-typography, Georgia);
-    font-size: var(--font-size-header);
-    color: black;
-    font-weight: medium;
-}
-
-.role {
-    font-family: var(--secondary-typography, Verdana);
-    font-size: var(--font-size-subheader);
-    color: var(--main-color, darkslateblue);
-
 }
 
 .footer-container {
